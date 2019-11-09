@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 2</title>
+
+    <script>
+        function prikaziSlika() {
+            var x = document.getElementById("slika");
+            var sliki = ["http://data.whicdn.com/images/15145864/large.jpg",
+            "https://farm5.staticflickr.com/4060/4567292488_5d3f4b05f6_z.jpg",
+            "https://images.unsplash.com/photo-1540646794357-6cbbd6f3501e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"];
+
+            var random = Math.floor(Math.random() * 3);
+            x.src = sliki[random];
+        }
+    </script>
+
+</head>
+<body>
+ <button onclick="prikaziSlika()">Show picture</button> <br/><br/>
+ <img id="slika" />
+
+</body>
+</html>

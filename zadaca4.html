@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca 4</title>
+
+    <script>
+        function add() {
+            var r1 = parseInt(document.getElementById("r1").value);
+            var i1 = parseInt(document.getElementById("i1").value);
+            var r2 = parseInt(document.getElementById("r2").value);
+            var i2 = parseInt(document.getElementById("i2").value);
+
+            if (isNaN(r1) || isNaN(r2) || isNaN(i1) || isNaN(i2)){
+                alert("Vnesovte pogresni informacii !!!");
+            }
+            else{
+                var sumaR = r1 + r2;
+                var sumaI = i1 + i2;
+
+                document.getElementById("rr").value = sumaR;
+                document.getElementById("ri").value = sumaI;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h3>Собирање на два комплексни броеви</h3>
+    <input  type="number" id="r1"/>
+    <input  type="number" id="i1"/> <i>i</i> <br/><br/>
+
+    <input  type="number" id="r2"/>
+    <input  type="number" id="i2"/> <i>i</i> <br/><br/>
+
+    <button width="20" onclick="add()">Add</button> <br/><br/>
+
+    <input  type="number" id="rr"/>
+    <input  type="number" id="ri"/> <i>i</i>
+
+</body>
+</html>

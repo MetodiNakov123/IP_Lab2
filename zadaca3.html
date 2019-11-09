@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+
+</head>
+<body>
+<h1>About Me</h1>
+
+<ul>
+    <li>Name: <span id="name"></span> </li>
+    <li>Index: <span id="index"></span> </li>
+    <li>Hometown: <span id="hometown"></span> </li>
+</ul>
+
+<script>
+
+    function fill() {
+        document.body.style.fontFamily = "Arial";
+
+        document.getElementById("name").innerHTML = "Metodi";
+        document.getElementById("index").innerHTML = "161041";
+        document.getElementById("hometown").innerHTML = "Kochani";
+
+        var listTagLi = document.getElementsByTagName("li");
+        for(var i=0; i<listTagLi.length; i++){
+            listTagLi[i].style.background = "red";
+        }
+
+        //console.log("log");
+    }
+
+    window.onload = fill();
+
+</script>
+
+</body>
+</html>
